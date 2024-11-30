@@ -29,6 +29,34 @@
             font-size: 2rem;
             color: #2C4E80;
         }
+        .card {
+        display: flex;
+        flex-direction: column; /* Arrange the content vertically */
+        justify-content: space-between; /* Ensure consistent spacing */
+        height: 100%; /* Equal height for all cards */
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Evenly space the title and other elements */
+        height: 100%; /* Take the available space */
+    }
+
+    .card-title {
+        min-height: 60px; /* Set a fixed height for the title area */
+        display: flex;
+        align-items: center; /* Center text vertically */
+        justify-content: center; /* Center text horizontally */
+        text-align: center; /* Align the title text */
+        margin: 0; /* Remove any extra margin */
+    }
+
+    .card img {
+        width: 100%; /* Maintain full width */
+        height: 250px; /* Set a consistent height for images */
+        object-fit: cover; /* Ensure the image fills its space */
+    }
 
         @media (min-width: 768px) {
             h1 {
@@ -36,29 +64,15 @@
             }
         }
 
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+       
 
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 20px;
-            background-color: #fff;
-        }
+        
+        
 
         .card-body h5 {
             font-size: 1.2rem;
@@ -87,38 +101,41 @@
                 font-size: 1.5rem;
             }
         }
+        .row-cols-1.row-cols-sm-2 {
+        justify-content: center; /* Center the cards if there are only two columns */
+    }
     </style>
 </head>
 <body>
-    <section id="features">
-        <div class="container">
-            <h1 class="text-center mb-5">Login as</h1>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
-                <!-- Student Card -->
-                <div class="col">
-                    <a href="student/login.php" style="text-decoration: none;">
-                        <div class="card">
-                            <img src="assets/images/students/student-login.png" class="card-img-top" alt="Student Login">
-                            <div class="card-body">
-                                <h5 class="card-title">STUDENT</h5>
-                            </div>
+<section id="features">
+    <div class="container">
+        <img src="assets/images/bhsrs_LOGO.svg" alt="" style="margin-bottom:-80px; margin-top:-100px;">
+        <div class="row row-cols-1 row-cols-sm-2 g-4 justify-content-center">
+            <!-- Student Card -->
+            <div class="col-md-6"> <!-- Adjust column width for 2 columns -->
+                <a href="lyinginportal/login.php" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/images/maternity.svg" class="card-img-top" alt="Student Login">
+                        <div class="card-body">
+                            <h5 class="card-title">Southern Maternity Lying in Clinic Portal</h5>
                         </div>
-                    </a>
-                </div>
-                <!-- Parent Card -->
-                <div class="col">
-                    <a href="parent/login.php" style="text-decoration: none;">
-                        <div class="card">
-                            <img src="assets/images/parent/parent-login.png" class="card-img-top" alt="Parent Login">
-                            <div class="card-body">
-                                <h5 class="card-title">PARENT</h5>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Parent Card -->
+            <div class="col-md-6"> <!-- Adjust column width for 2 columns -->
+                <a href="admin/login.php" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/images/BHS.svg" class="card-img-top" alt="Parent Login">
+                        <div class="card-body">
+                            <h5 class="card-title">Banquerohan Health Station Portal</h5>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

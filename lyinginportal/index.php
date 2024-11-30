@@ -61,7 +61,7 @@ if (empty($_SESSION['user_id']) || $_SESSION['usertype'] !== 'ADMIN') {
             include "events/index.php";
           }
           if ($_GET['url'] == "records") {
-            include "patientsrecord/index.php";
+            include "prenatal/index.php";
           }
           if ($_GET['url'] == "prenatal") {
             include "prenatal/index.php";
@@ -71,7 +71,12 @@ if (empty($_SESSION['user_id']) || $_SESSION['usertype'] !== 'ADMIN') {
           }if ($_GET['url'] == "otherservices") {
             include "otherservices/index.php";
           }
-
+          if ($_GET['url'] == "reservations") {
+            include "reservation/index.php";
+          }
+          if ($_GET['url'] == "adduser") {
+            include "adduser/index.php";
+          }
 
         }
         ?>

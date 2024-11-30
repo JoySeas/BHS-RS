@@ -149,6 +149,7 @@ if (!$announcement) {
     </style>
 </head>
 <body>
+    <div class="card" style="padding-top: .5rem; padding-bottom: .5rem; border-radius: 5px; box-shadow: 2px 3px 5px rgb(126, 142, 159);">
     <div class="announcement-container">
         <div class="announcement-image">
             <img id="announcementImage" src="<?php echo '../admin/uploads/' . basename($announcement['image_path']); ?>" alt="Announcement Image">
@@ -173,6 +174,7 @@ if (!$announcement) {
             </div>
              
         </div>
+    </div>
     </div>
 
 

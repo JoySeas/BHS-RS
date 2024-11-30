@@ -114,8 +114,8 @@
 <body>
 <div class="container-fluid" style="padding: 15px 15px; background-color: white; min-height: 540px; margin-top: 15px; border-radius: 5px; border: 1px solid #dcdcdc;">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h3 class="mb-0 headerfontfont" style="color: #2c2b2e; font-weight: 500;">
-            PRENATAL
+        <h3 class="mb-0 headerfontfont" style="color: #2c2b2e; font-weight: 800;">
+        LYING IN PATIENTS
         </h3>
         <button class="btn add-patient-btn" data-toggle="modal" data-target="#mdlAddPatient">
             <img src="./assets/images/add.png" alt="add-image" style="width: 20px;">
@@ -126,7 +126,7 @@
 <div class="container-fluid" style="padding: 15px 15px; background-color: white; min-height: 540px; margin-top: 15px; border-radius: 5px; border: 1px solid #dcdcdc;">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h3 class="mb-0 headerfontfont" style="color: #2c2b2e; font-weight: 500;">PATIENTS</h3>
+                <h3 class="mb-0 headerfontfont" style="color: #2c2b2e; font-weight: 500;"></h3>
                 <!-- <h6 class="mb-0 headerfontfont" style="font-weight: 500; font-size: 15px;">Total of <span id="teacherstotal" style="font-size: 20px; font-weight: 900;"> 35</span> Teachers</h6> -->
             </div>
             <div class="col-md-4">

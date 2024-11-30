@@ -58,10 +58,16 @@ $username = $_SESSION['username'];
                         <span class="hide-menu">&nbsp;&nbsp;Dashboard</span>
                     </a>
                 </li>
-                <li id="mainuseraccount">
+                <!-- <li id="mainuseraccount">
                     <a href="index.php?url=events"><i><img src="assets/images/calendar.png" alt=""
                                 style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Calendar</span>
+                    </a>
+                </li> -->
+                <li id="mainuseraccount">
+                    <a href="index.php?url=reservations"><i><img src="assets/images/sms.png" alt=""
+                                style="width: 30px"></i>
+                        <span class="hide-menu">&nbsp;&nbsp;Reservations</span>
                     </a>
                 </li>
                 <li id="mainuseraccount">
@@ -70,26 +76,22 @@ $username = $_SESSION['username'];
                         <span class="hide-menu">&nbsp;&nbsp;Patient's Record</span>
                     </a>
                 </li>
-                <li id="mainuseraccount">
+                
+                <!-- <li id="mainuseraccount">
                     <a href="index.php?url=announcement"><i><img src="assets/images/mission.png" alt=""
                                 style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Medical Mission</span>
                     </a>
-                </li>
-                <li id="mainuseraccount">
+                </li> -->
+                <!-- <li id="mainuseraccount">
                     <a href="index.php?url=backup"><i><img src="assets/images/backup.png" alt=""
                                 style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Backup & Restore</span>
                     </a>
-                </li>
+                </li> -->
+                
                 <li id="mainuseraccount">
-                    <a href="index.php?url=reservations"><i><img src="assets/images/sms.png" alt=""
-                                style="width: 30px"></i>
-                        <span class="hide-menu">&nbsp;&nbsp;Reservations</span>
-                    </a>
-                </li>
-                <li id="mainuseraccount">
-                    <a href="index.php?url=user"><i><img src="assets/images/user.png" alt=""
+                    <a href="index.php?url=adduser"><i><img src="assets/images/user.png" alt=""
                                 style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Users</span>
                     </a>
@@ -123,7 +125,7 @@ $username = $_SESSION['username'];
 
 
 
-                <li class="nav-devider" style="margin: 50px 0;"></li>
+                <li class="nav-devider" style="margin: 100px 0;"></li>
 
                 <li id="notifications">
                     <a href="#"><i><img src="assets/images/notification.png" alt="" style="width: 30px"></i>

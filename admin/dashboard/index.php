@@ -186,7 +186,7 @@ $result = $conn->query($query);
                                 <button class="view-users-btn" onclick="window.location.href='index.php?url=teachers';">View Users</button>
                             </div>    
                                 <div class="row" style="margin-top: 5px; margin-bottom: 55px;  ">
-                                    <!-- <canvas id="pieChart"></canvas> -->
+                                    <canvas id="doughnutChart"></canvas>
                                 </div>
                         </div>
                     </div>
@@ -216,70 +216,45 @@ $result = $conn->query($query);
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    // $(document).ready(function() {
-    //     $.ajax({
-    //         url: 'dashboard/total_users.php',
-    //         method: 'GET',
-    //         dataType: 'json',
-    //         success: function(data) {
-    //             var ctx = document.getElementById('pieChart').getContext('2d');
-    //             new Chart(ctx, {
-    //                 type: 'pie',
-    //                 data: {
-    //                     labels: ['Teachers', 'Students', 'Parents'],
-    //                     datasets: [{
-    //                         label: 'Total Users',
-    //                         data: [data.total_teachers, data.total_students, data.total_parents],
-    //                         backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-    //                     }]
-    //                 },
-    //                 options: {
-    //                     responsive: true,
-    //                     plugins: {
-    //                         legend: {
-    //                             position: 'top',
-    //                         },
-    //                         tooltip: {
-    //                             callbacks: {
-    //                                 label: function(tooltipItem) {
-    //                                     return tooltipItem.label + ': ' + tooltipItem.raw;
-    //                                 }
-    //                             }
-    //                         },
-    //                         datalabels: {
-    //                             color: '#fff',
-    //                             display: true,
-    //                             formatter: function(value, context) {
-    //                                 var dataset = context.chart.data.datasets[0];
-    //                                 var total = dataset.data.reduce((a, b) => a + b, 0);
-    //                                 var percentage = (value / total * 100).toFixed(2) + '%';
-    //                                 return percentage; // Display percentage
-    //                             },
-    //                             font: {
-    //                                 weight: 'bold',
-    //                                 size: 14
-    //                             },
-    //                             anchor: 'center',
-    //                             align: 'center',
-    //                             padding: 4
-    //                         }
-    //                     }
-    //                 },
-    //                 plugins: [ChartDataLabels] // Register the plugin
-    //             });
-    //         },
-    //         error: function(xhr, status, error) {
-    //             console.error('AJAX Error - Status:', status);
-    //             console.error('AJAX Error - Error:', error);
-    //             console.error('AJAX Error - Response Text:', xhr.responseText);
-    //             console.error('AJAX Error - Status Code:', xhr.status);
-    //             console.error('AJAX Error - Headers:', xhr.getAllResponseHeaders());
-    //         }
-    //     });
-    // });
-</script>
 
+<script>
+        // Static data for the doughnut chart
+        var ctx = document.getElementById('doughnutChart').getContext('2d');
+        var doughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Doctor', 'BHW', 'Nurse', 'Midwife'], // Labels for the slices
+                datasets: [{
+                    label: 'User Distribution',
+                    data: [25, 30, 25, 20], // Data for each slice
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.6)', // Color for Doctor
+                        'rgba(255, 99, 132, 0.6)', // Color for BHW
+                        'rgba(255, 159, 64, 0.6)', // Color for Nurse
+                        'rgba(75, 192, 192, 0.6)'  // Color for Midwife
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => value + '%', // Add percentage on each slice
+                        color: '#fff', // Text color inside the chart
+                        font: {
+                            weight: 'bold'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>

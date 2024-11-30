@@ -117,6 +117,15 @@
         <h3 class="mb-0 headerfontfont" style="color: #2c2b2e; font-weight: 500;">
             IMMUNIZATION
         </h3>
+        <div class="input-group-prepend">
+                <a href="#" id="exportExcelImage">
+                    <img src="prenatal/excel.png" alt="Export to Excel"
+                        style="cursor: pointer; width: 40px; height: auto;">
+                </a>
+                <a href="#" id="exportPdfImage">
+                    <img src="prenatal/pdf.png" alt="Export to PDF" style="cursor: pointer; width: 40px; height: auto;">
+                </a>
+            </div>
         <button class="btn add-patient-btn" data-toggle="modal" data-target="#mdlAddPatient">
             <img src="./assets/images/add.png" alt="add-image" style="width: 20px;">
             Add Patient

@@ -76,12 +76,12 @@ $username = $_SESSION['username'];
                         <span class="hide-menu">&nbsp;&nbsp;Medical Mission</span>
                     </a>
                 </li>
-                <li id="mainuseraccount">
+                <!-- <li id="mainuseraccount">
                     <a href="index.php?url=backup"><i><img src="assets/images/backup.png" alt=""
                                 style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Backup & Restore</span>
                     </a>
-                </li>
+                </li> -->
                 <li id="mainuseraccount">
                     <a href="index.php?url=reservations"><i><img src="assets/images/sms.png" alt=""
                                 style="width: 30px"></i>
@@ -89,7 +89,7 @@ $username = $_SESSION['username'];
                     </a>
                 </li>
                 <li id="mainuseraccount">
-                    <a href="index.php?url=user"><i><img src="assets/images/user.png" alt=""
+                    <a href="index.php?url=adduser"><i><img src="assets/images/user.png" alt=""
                                 style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Users</span>
                     </a>
