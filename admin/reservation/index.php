@@ -314,23 +314,23 @@
             {
                 no: 1,
                 name: 'Janeth Lumen',
-                address: '123 Purok St., Brgy. Sample, Citytown',
+                address: '123 Purok St., Brgy. Banquerohan, Legazpi City',
                 dateToVisit: '2024-12-05',
-                servicesToAvail: 'Prenatal Checkup',
+                servicesToAvail: 'Checkup',
                 contactNo: '+639123456789'
             },
             {
                 no: 2,
                 name: 'Rosemarie Jadie',
-                address: '123 Purok St., Brgy. Sample, Citytown',
+                address: '123 Purok St., Brgy. Banquerohan, Legazpi City',
                 dateToVisit: '2024-12-05',
-                servicesToAvail: 'Prenatal Checkup',
+                servicesToAvail: 'Checkup',
                 contactNo: '+639123456789'
             },
             {
                 no: 3,
                 name: 'Jinky Quintana',
-                address: '123 Purok St., Brgy. Sample, Citytown',
+                address: '123 Purok St., Brgy. Banquerohan, Legazpi City',
                 dateToVisit: '2024-12-05',
                 servicesToAvail: 'Prenatal Checkup',
                 contactNo: '+639123456789'

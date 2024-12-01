@@ -123,13 +123,13 @@ $username = $_SESSION['username'];
 
 
 
-                <li class="nav-devider" style="margin: 50px 0;"></li>
+                <li class="nav-devider" style="margin: 100px 0;"></li>
 
-                <li id="notifications">
+                <!-- <li id="notifications">
                     <a href="#"><i><img src="assets/images/notification.png" alt="" style="width: 30px"></i>
                         <span class="hide-menu">&nbsp;&nbsp;Notifications</span>
                     </a>
-                </li>
+                </li> -->
                 <li class=" nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
