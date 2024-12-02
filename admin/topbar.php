@@ -45,7 +45,7 @@ $username = $_SESSION['username'];
                     <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark"
                         aria-haspopup="true" aria-expanded="false">
                         <h5 class="text-white" style="margin-bottom:0px;"><img
-                                src="assets/images/BHS-logo.png" alt="logo"
+                                src="assets/images/bhs-logo.svg" alt="logo"
                                 class="dark-logo imagetopbar" style="width: 220px;" /></h5>
                     </a>
                 </li>
